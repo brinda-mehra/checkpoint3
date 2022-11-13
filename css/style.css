@@ -111,7 +111,6 @@ body{
 
 .grid2{
     display: grid;
-    grid-template: repeat(8, 1fr);
 }
 
 
@@ -142,7 +141,7 @@ body{
 .nav-toggle {
     position: absolute;
     cursor:pointer;
-    margin:1rem, 1rem;
+    margin:1rem 1rem;
     padding-top: 0.8em;
     padding-bottom: 1em;
     padding-right: 2rem;
@@ -693,16 +692,12 @@ footer img {
 	
 	.gallery_item {
 		width: calc((100% / 2) - 10px);
-		/* Cada item terá o seu valor máximo disponível,
-		divido por 2, menos 10px, cada item terá menos 10px,
-		ou seja, 2 itens por linha, 10px + 10px = 20px,
-		estes 20px serão usados como margin-left abaixo */
+		
 	}
 	
 	.gallery_item:nth-child(even) {
 		margin-left: 20px;
-		/* Cada item par, terá uma margem esquerda de 20px,
-		os 20px foram os que sobraram da .gallery__item */
+	
 	}
 }
 
@@ -715,16 +710,11 @@ footer img {
 	
 	.gallery_item {
 		width: calc((100% / 3) - 20px);
-		/* Agora que o container .gallery não possui
-		mais padding-left, e os item ímpares serão os
-		que ficaram na lateral esquerda, retiro 20px
-		de cada item, e adiciono como margin-left
-		nos ímpares abaixo */
+		
 	}
 	
 	.gallery_item:nth-child(odd) {
 		margin-left: 20px;
-		/* Cada item ímpar, terá uma
-		margem esquerda de 20px */
+
 	}
 }
